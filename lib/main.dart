@@ -8,10 +8,10 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
       options: const FirebaseOptions(
-          apiKey: 'AIzaSyDAsrvU75GvPJeeNlMI1_xkWs7KY2Mt_wI',
-          appId: '1:918373475941:android:d746e7945eca7559c0488c',
-          messagingSenderId: '918373475941',
-          projectId: 'push-notification-flutte-21ec9'));
+          apiKey: 'api_key_current_key',
+          appId: 'client_info_mobilesdk_app_id',
+          messagingSenderId: 'project_info_project_number',
+          projectId: 'project_info_project_id'));
 
   await requestNotificationPermissions();
   await getFCMToken();
